@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>update</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+   
+      <section class="flex">
+   
+         <header class="header">
+   
+            <section class="flex">
+          
+              <img src="images/logo.jpg" alt="Website Logo">
+              
+              <a href="home.html" class="logo">Learn Together</a>      
+          
+          </header>
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+   
+         <div class="profile">
+            <img src="images/avata.jpg" class="image" alt="">
+            <h3 class="name">Nguyễn Văn Nghĩa</h3>
+            <p class="role">Student</p>
+            <a href="profile.html" class="btn">Thông tin</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">Đăng nhập</a>
+               <a href="register.html" class="option-btn">Đăng kí</a>
+            </div>
+         </div>
+   
+      </section>
+   
+   </header>    
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/avata.jpg" class="image" alt="">
+      <h3 class="name">Nguyễn Văn Nghĩa</h3>
+      <p class="role">Student</p> 
+      <a href="profile.html" class="btn">Thông tin</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-school"></i><span>Trang chủ</span></a>
+      <a href="class.html"><i class="fas fa-door-open"></i><span>Phòng học</span></a>
+      <a href="courses.html"><i class="fas fa-book"></i><span>Môn học</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-teacher"></i><span>Giảng viên</span></a>
+      <a href="contact.html"><i class="fas fa-phone"></i><span>Liên hệ</span></a>
+    </nav>
+
+</div>
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>Tạo phòng</h3>
+      <input type="text" name="namesubject" value="Lập trình Python" maxlength="50" class="box" readonly>
+      <p>Tên địa điểm</p>
+      <input type="text" name="name" placeholder="Nhập tên địa điểm" maxlength="50" class="box">
+      <p>Địa chỉ</p>
+      <input type="text" name="address" placeholder="Nhập địa chỉ" maxlength="50" class="box">
+      <p>Tên phòng học</p>
+      <input type="text" name="roomName" placeholder="Nhập tên phòng học" maxlength="20" class="box">
+      <p>Số người tối đa</p>
+      <input type="number" id="maxParticipants" name="maxParticipants" placeholder="Nhập số người tối đa" class="box">
+      <p>Thời gian bắt đầu</p>
+      <input type="datetime-local" id="startTime" name="startTime" placeholder="Nhập thời gian bắt đầu"class="box">
+      <p>Thời gian kết thúc</p>
+      <input type="datetime-local" id="endTime" name="endTime" placeholder="Nhập thời gian kết thúc"class="box">
+      <p>Học phí</p>
+      <input type="number" id="tuitionFee" name="tuitionFee"placeholder="Nhập học phí" class="box">
+      <p>Mô tả</p>
+      <input type="textarea" name="name" placeholder="Nhập mô tả"  class="box">
+      <input type="submit" value="Tạo phòng" name="submit" class="btn">
+   </form>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>
